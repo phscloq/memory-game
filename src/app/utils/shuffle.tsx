@@ -1,4 +1,4 @@
-export default function Shuffle({pokemonList}:{pokemonList:any}){
+export default function Shuffle(pokemonList: any[]){
     const temporaryArr = [];
 
 while(pokemonList.length>=1){
@@ -12,5 +12,6 @@ while(pokemonList.length>=1){
 for(let i=0; i<12; i++){
     pokemonList.push(temporaryArr[i]);
 }
+
 return pokemonList;
 }
